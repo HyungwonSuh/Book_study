@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = 2.1234;
+
+        var maxNum = Math.max(10, 5 ,8, 30);
+        var minNum = Math.min(10, 5, 8, 30);
+        var roundNum = Math.round(num);
+        var ceilNum = Math.ceil(num);
+        var floorNum = Math.floor(num);
+        var rndNum = Math.random();
+        var piNum = Math.PI;
+
+        document.write(maxNum + '<br>');
+        document.write(minNum + '<br>');
+        document.write(roundNum + '<br>');
+        document.write(ceilNum + '<br>');
+        document.write(floorNum + '<br>');
+        document.write(rndNum + '<br>');
+        document.write(piNum + '<br>');
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+        document.write('/////////////////////////////////////////////////////////////////////')
+        document.write('<h1> random 함수</h1>')
+        
+        var rndNum2 = Math.floor(Math.random() * 11);
+        document.write('0부터 10까지',rndNum2,'<br>')
+        var rndNum2 = Math.floor((Math.random() * 31) + 120);
+        document.write('120부터 150까지',rndNum2,'<br>')
+
+////////////////////////////////////////////////////////////////////////////////////////////////////
+        document.write('/////////////////////////////////////////////////////////////////////')
+        document.write('<h1>random함수 예제</h1>')
+
+        var game = prompt('가위, 바위, 보 중 선택하세요', '가위')
+        var gameNum;
+        switch(game){
+            case '가위' :
+                gameNum = 1; break;
+            case '바위' :
+                gameNum = 2; break;
+            case '보' :
+                gameNum = 3; break;
+            default :
+                alert('잘못입력하였습니다.')
+                location.reload()
+        }
+
+        var com = Math.ceil(Math.random() * 3)
+        document.write(com, '<br>')
+        switch(com){
+            case 1 :
+                com = '가위'; 
+                break;
+            case 2 :
+                com = '바위'; 
+                break;
+            case 3 :
+                com = '보'; 
+                break;
+        }
+
+        document.write('컴퓨터 : ' + com + '<br>')
+
+        switch(com){
+            case '가위' :
+                com = 1; 
+                break;
+            case '바위' :
+                com = 2; 
+                break;
+            case '보' :
+                com = 3; 
+                break;
+        }
+
+        if(gameNum == com){
+            document.write('잘 맞췄습니다')
+        }else{
+            document.write('못 맞췄습니다.')
+        }
+    </script>
+</body>
+</html>

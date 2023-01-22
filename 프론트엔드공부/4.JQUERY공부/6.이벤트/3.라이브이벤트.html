@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function(){
+          $('.btn_1.asd').on('mouseover focus', function(){
+            alert('HELLO!')
+          })
+          $('.btn_1').addClass('asd')
+          
+          //올바른 방법1
+          // $('.btn_1').addClass('zxc')
+          // $('.btn_1.zxc').on('mouseover focus', function(){
+          //   alert('HELLO!')
+          // })
+
+          //올바른 방법2
+          $(document).on('mouseover focus', '.btn_2.zxc', function(){
+            alert('WELCOME')
+          });
+          $('.btn_2').addClass('zxc')
+        });
+    </script>
+    
+</head>
+<body>
+  <div id="wrap">
+    <p><button class="btn_1">클래스를 넣기전에 이벤트함수를 작성하면 실제로 이벤트는 실행이 안됩니다. 왜냐하면 이벤트함수가 만들어질 당시, 클래스가 아직 존재하지 않기 때문이죠.</button></p>
+    <p><button class="btn_2">버튼2</button></p>
+  </div>
+</body>
+</html>

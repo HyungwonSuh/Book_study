@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /*문제 1번*/
+        document.write('-------------------------문제1번------------------------- <br><Br>')
+        var transportation = 3000;
+        var food = 6000;
+        var drink = 3000;
+        var properCost = 10000;
+        var total = transportation + food + drink;
+
+        var result = properCost < total ? (total - properCost) + "원 초과<br>" : "돈 관리 잘 했어요!<br>" 
+        document.write(result)
+
+        /*문제2번*/
+        document.write('-------------------------문제2번------------------------- <br><Br>')
+        var quarter1 = 1200;
+        var quarter2 = 1300;
+        var quarter3 = 1000;
+        var average = (quarter1 + quarter2 + quarter3) / 3;
+
+        var sales = prompt('how much sales in quarter4?')
+
+        var result = sales >= average ? "판매량이 평균 이상입니다." : '판매량이 평균 미달입니다.'
+        document.write(result)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

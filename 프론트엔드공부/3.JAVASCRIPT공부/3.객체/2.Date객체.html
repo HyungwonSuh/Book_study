@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var today = new Date();
+        var nowMonth = today.getMonth(), nowDate = today.getDate(), nowDay = today.getDay();
+
+        document.write('<h1>오늘 날짜 정보</h1>');
+        document.write('현재 월: ' + nowMonth, '<br>');
+        document.write('현재 일: ' + nowDate, '<br>');
+        document.write('현재 요일: ' + nowDay, '<br>');
+
+        ////////////////////////////////////////////////////////////////////////////////////////////
+        var worldcup = new Date(2002, 4, 31);
+        var theMonth = worldcup.getMonth();
+        var theDate = worldcup.getDate();
+        var theDay = worldcup.getDay();
+
+        document.write('<h1>월드컵 날짜 정보</h1>');
+        document.write('월드컵 월: ' + theMonth, '<br>');
+        document.write('월드컵 일: ' + theDate, '<br>');
+        document.write('월드컵 요일: ' + theDay, '<br>');
+        ////////////////////////////////////////////////////////////////////////////////////////////////
+        var today = new Date();
+        var nowYear = today.getFullYear();
+        
+        var theDate = new Date(nowYear, 11, 31);
+        var diffDate = theDate.getTime() - today.getTime()
+
+        var theDate2 = new Date(1969, 11, 31);
+        document.write('20년 1월1일 : ' + theDate2.getTime() + '<br>')
+
+        var result = Math.ceil(diffDate / (60 * 1000 * 60 *24));
+        document.write('현재시각 : ' + today.getTime() + "<br>")
+        document.write('현재시각을 날짜로 계산 : ' + today.getTime()/(1000 * 60 * 60 * 24) + "<br>")
+        document.write('현재시각을 날짜로 계산 : ' + ((today.getTime()/(1000 * 60 * 60 * 24))/365) + "<br>")
+        document.write('2023.11.31 : ' + theDate.getTime() + '<br>')
+        document.write('시간차이 : ' + diffDate + '<br>')
+        document.write('연말 D-day: ' + result + '일 남았습니다.')
+
+        document.write('Date() 객체에서 getTime() 은 1970.1.1 을기준으로 1/1000초 단위로 차이를 보여준다')
+    </script>
+</body>
+</html>

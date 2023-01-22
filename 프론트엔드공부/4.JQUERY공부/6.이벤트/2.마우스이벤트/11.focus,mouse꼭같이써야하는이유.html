@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function(){
+           $('#btn1').data({'text' : 'javascript'}).on({'mouseover' : overFnc, 'mouseout' : outFnc})
+           $('#btn2').data({'text' : 'welcome!'}).on({'mouseover focus' : overFnc, 'mouseout blur' : outFnc})
+           
+           function overFnc(){
+            $('.txt').text($(this).data('text'))
+           };
+           function outFnc(){
+            $('.txt').text('')
+           }
+        });
+    </script>
+    
+</head>
+<body>
+    <p>
+        <button id="btn1">mouseover 와 focus 를 같이 보조로 함께써야 하는 이유는</button>
+    </p>
+    <p>
+        <button id="btn2">focus와 blur 는 마우스가 없는 사용자가 키보드로도 활용할수 있기때문이라한다.</button>
+    </p>
+    <p class="txt"></p>
+</body>
+</html>

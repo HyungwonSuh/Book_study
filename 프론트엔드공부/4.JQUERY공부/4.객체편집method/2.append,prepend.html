@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+    
+    </style>
+    <script>
+        $(document).ready(function(){
+          $('<li>appendTo</li>').appendTo('#listZone')
+          $('#listZone').prepend('<li>prepend</li>')
+        });
+    </script>
+</head>
+<body>
+    <ul id = 'listZone'>
+        <li>리스트1</li>
+        <li>리스트2</li>
+        <li>리스트3</li>
+    </ul>
+</body>
+</html>

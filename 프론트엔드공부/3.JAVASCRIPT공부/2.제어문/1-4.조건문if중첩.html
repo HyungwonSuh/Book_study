@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //중첩 if 문 활용---------------------------------------------------------------------------------------
+        document.write('<br>================================================중첩 if문 활용 ================================================<br>')
+        document.write('================================================중첩 if문 활용 ================================================<br><br>')
+        
+        var id = "0526shw";
+        var pw = "123123";
+        var user_id = prompt('id : ?',"");
+        var user_pw = '';
+        console.log(user_id);
+        console.log(user_pw);
+
+        if(id == user_id){
+            user_pw = prompt('pw : ?',"");
+            if(pw == user_pw){
+                document.write(user_id + '님 반갑습니다.');
+            }else{
+                alert('비밀번호가 일치하지 않습니다.');
+                location.reload();
+
+            }   
+        }else{
+            alert('아이디가 일치하지 않습니다.');
+            location.reload();
+        }
+        console.log(user_pw);
+    </script>
+</body>
+</html>

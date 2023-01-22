@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [30, '따르릉', true];
+
+        document.write('<h3>배열값 가져오기</h3>')
+        document.write(arr[0], '<br>')
+        document.write(arr[1], '<br>')
+        document.write(arr[2], '<br>')
+
+        document.write('<h3>배열값 가져오기</h3>')
+        for(var i = 0; i < arr.length; i++){
+            document.write(arr[i], '<br>')
+        }
+
+        document.write('<h3>배열값 가져오기</h3>')
+        for( i in arr){
+            document.write(arr[i], '<br>')
+        }
+        /////////////////////////////////////////////////////////////////////////////////////////
+        document.write('//////////////////////////////////////////////////////////<h3>콘솔창보기</h3>///////////////////////////////////////////////////////////////////////<br>')
+        document.write('<h3>pop - push / shift - unshift / join / concat / slice / sort / reverse / splice /</h3> ')
+
+
+        var arr_1 = ['사당', '교대', '방배', '강남','합정','삼성'];
+        var arr_2 = ['신사', '압구정', '옥수'];
+
+        console.log('arr_1 : ', arr_1)
+        console.log('arr_2 : ', arr_2)
+
+        var result = arr_1.join('-');
+        console.log('arr_1.join("-") : ', result);
+
+        result = arr_1.concat(arr_2);
+        console.log('arr_1.concat(arr_2) : ',result)
+
+        result = arr_1.slice(1, 4);
+        console.log('arr_1.slice(1, 4) : ',result)
+
+        result = arr_1.sort();
+        console.log('arr_1.sort() : ', result)
+
+        result = arr_1.reverse();
+        console.log('arr_1.reverse() :', result)
+
+        var greenArr = ['교대', '방배', '강남', '신촌', '뚝섬'];
+        console.log('greenArr : ', greenArr)
+        greenArr.splice(2, 1, '서초', '역삼');
+        console.log('greenArr.splice(2, 1, "서초", "역삼") : ', greenArr)
+        
+        var yellowArr = ['미금', '정자', '수서'];
+        console.log('yellowArr : ', yellowArr)
+        var data1 = yellowArr.pop();
+        console.log('var data1 = yellowArr.pop() ----> data1 : ', data1)
+        console.log('yellowArr : ', yellowArr)
+        var data2 = yellowArr.shift();
+        console.log('var data2 = yellowArr.shift() ----> data2 : ', data2)
+        console.log('yellowArr : ', yellowArr)
+        yellowArr.push(data2);
+        console.log('yellowArr.push(data2) ----> yellowArr: ', yellowArr)
+        yellowArr.push(data2);
+        console.log('yellowArr.push(data2) ----> yellowArr: ', yellowArr)
+        yellowArr.unshift(data1);
+        console.log('yellowArr.unshift(data1) ----> yellowArr : ', yellowArr)
+        yellowArr.unshift(data1);
+        console.log('yellowArr.unshift(data1) ----> yellowArr : ', yellowArr)
+    </script>
+</body>
+</html>

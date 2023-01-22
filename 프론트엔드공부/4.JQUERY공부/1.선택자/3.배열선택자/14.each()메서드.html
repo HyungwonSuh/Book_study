@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script>
+        // each() 와 map() 의 차이점 return이 되고 안되고
+        $(function(){
+            var obj = [{'area':'서울', 'name':'박과장'}, {'area' : '부산', 'name' : '김대리'}, {'area' : '전주', 'name':'이부장'}]
+        
+            $(obj).each(function(i, o){
+                console.log(i + ':', o)
+            });
+            $.each($(obj), function(i, o){
+                console.log(i + ':', o)
+            })
+            $.each($(obj), function(i) {
+                console.log(i + ':', $(this))
+            })
+
+            console.log('return 적용 아예안됨-----------------------------------------')
+            obj2 = $.each(obj, function(i, o){
+                console.log(o.area)
+                if(o.area == '서울'){
+                    return o
+                }
+            })
+            console.log('obj2 :',obj2)
+            console.log('return 적용 아예안됨-----------------------------------------')
+        });
+    </script>
+</head>
+<body>
+   
+</body>
+</html>

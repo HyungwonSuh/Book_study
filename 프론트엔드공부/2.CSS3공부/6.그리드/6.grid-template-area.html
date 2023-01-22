@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-template-area</title>
+    <Style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width: 960px;
+            margin: auto;
+
+            display: grid;
+            grid-template: 70px 1fr 70px / 200px 1fr;
+            grid-gap: 5px;
+            grid-template-areas: 
+            'header header'
+            'aside content'
+            'footer footer';
+        }
+        .cell-header{ grid-area: header;}
+        .cell-aside{grid-area: aside;}
+        .cell-content{grid-area: content;}
+        .cell-footer{grid-area: footer;}
+
+
+        [class*=cell]{
+            box-sizing: border-box;
+            border: 5px solid black;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+
+    </Style>
+</head>
+<body>
+    <div class="container">
+        <div class="cell-header">
+            <h1>Title darkeness</h1>
+        </div>
+        <div class="cell-aside">
+            <p>cell aside cell asidecell aside cell asidecell aside cell aside</p>
+            <p>cell aside cell asidecell aside cell asidecell aside cell aside</p>
+            <p>cell aside cell asidecell aside cell asidecell aside cell aside</p>
+            <p>cell aside cell asidecell aside cell asidecell aside cell aside</p>
+        </div>
+        <div class="cell-content">
+            <h1>cell-content</h1>
+            <p>cell contentcell contentcell contentcell contentcell contentcell contentcell content
+                cell contentcell contentcell contentcell contentcell contentcell contentcell content
+                cell contentcell contentcell contentcell contentcell contentcell contentcell content
+                cell contentcell contentcell contentcell contentcell contentcell contentcell content
+                cell contentcell contentcell contentcell contentcell contentcell contentcell content
+            </p>
+            <p>cell contentcell contentcell contentcell contentcell contentcell contentcell content
+                cell contentcell contentcell contentcell contentcell contentcell contentcell content
+                cell contentcell contentcell contentcell contentcell contentcell contentcell content
+                cell contentcell contentcell contentcell contentcell contentcell contentcell content
+                cell contentcell contentcell contentcell contentcell contentcell contentcell content
+            </p>
+        </div>
+        <div class="cell-footer">
+            cell footercell footercell footercell footercell footer
+            cell footercell footercell footercell footercell footer
+        </div>
+    </div>
+</body>
+</html>

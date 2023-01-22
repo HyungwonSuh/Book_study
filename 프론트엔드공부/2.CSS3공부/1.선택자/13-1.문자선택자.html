@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>문자선택자</title>
+    <style>
+        p::first-letter{font-size: 3em;}
+        p::first-line{color: red;}        
+        table tr th::first-letter{color: red;}        
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <tr>
+            <th>선택자 형태</th>
+            <th>설명</th>
+        </tr>
+        <tr>
+            <td>::first-letter</td>
+            <td>첫 번째 글자를 선택합니다.</td>
+        </tr>
+        <tr>
+            <td>::first-line</td>
+            <td>첫 번째 줄을 선택합니다.</td>
+        </tr>
+    </table>
+
+    <br><br><hr>
+
+    <h1>이것은 제목이다냥</h1>
+    <p>당장 츄르를 대령하지 않으면 집사 가만두지 않겠다냥<br>
+        당장 츄르를 대령하지 않으면 집사 가만두지 않겠다냥<br>
+        당장 츄르를 대령하지 않으면 집사 가만두지 않겠다냥       
+    </p>
+    <p>당장 츄르를 대령하지 않으면 집사 가만두지 않겠다냥</p>
+    <p>당장 츄르를 대령하지 않으면 집사 가만두지 않겠다냥</p>
+    <p>당장 츄르를 대령하지 않으면 집사 가만두지 않겠다냥<br>
+        당장 츄르를 대령하지 않으면 집사 가만두지 않겠다냥
+    </p>
+    <p>당장 츄르를 대령하지 않으면 집사 가만두지 않겠다냥</p>
+
+</body>
+</html>

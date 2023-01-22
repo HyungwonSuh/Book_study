@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function(){
+          var beforeMenu = null;
+
+          $('.gnb a').on('mouseover focus', function(){
+            if(beforeMenu) {
+              beforeMenu.css('background' , 'none')
+            }
+            $(this).css('background-color', 'blue');
+            beforeMenu = $(this);
+          })
+
+          $('.gnb').on('mouseout', function(){
+            if(beforeMenu){
+              beforeMenu.css('background', 'none')
+            }
+          })
+        });
+    </script>
+    
+</head>
+<body>
+  <ul class="gnb">
+    <button><a href="#">menu1</a></button>
+    <button><a href="#">menu2</a></button>
+    <button><a href="#">menu3</a></button>
+    <button><a href="#">menu4</a></button>
+  </ul>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>폰트속성</title>
+    <style>
+        /* 글꼴을 Arial, Helvetica, sans-serif 순서로 적용한다. 사용자의웹브라우저에
+        해당 글꼴이 설치가 안되어있을경우 다음글꼴로 넘어간다.*/
+        .arial{font-family:Arial, Helvetica, sans-serif}
+        .roman{font-family:'Times New Roman', Times, serif}
+        
+        .a{font-size: 32px;}
+        .b{font-size: 2em;}
+        .c{font-size: large;}
+        .d{font-size: small;}
+
+        .italic{font-style: italic;}
+        .bold{font-weight: bold;}
+
+        .center{text-align: center;}
+        .button{
+            width:150px; height:70px;
+            background-color: #FF6A00;
+            border:10px solid #FFFFFF;
+            border-radius: 30px;
+            box-shadow: 5px 5px 5px #A9A9A9;
+            text-align: center;
+        }
+
+        .button>a{
+            display: block;
+            line-height: 70px;
+        }
+        
+        .decoration{
+            text-decoration: none;
+        }
+    </style> 
+</head>
+<body>
+    <h1>h1의 default 크기는 32px이다냥</h1>
+    <p class="a arial" >이것은32px</p>
+    <p class="b roman" >이것은2em</p>
+    <p>p 의 default 크기는 16px이다냥</p>
+    <p class="c arial">이것은large</p>
+    <p class="d fontfamily">이것은small</p>
+    <p class="roman"> 글꼴을 Arial, Helvetica, sans-serif 순서로 적용한다. 사용자의웹브라우저에
+        해당 글꼴이 설치가 안되어있을경우 다음글꼴로 넘어간다.</p>
+    <p class="italic">이것은 italic 스타일 font-style 적용</p>
+    <p class ="bold">이것은 bold 스타일 font-weight 적용</p>
+
+    <br>
+    <hr>
+
+    <p class="center"> text-align : center 입니당</p>
+
+    <br>
+    <hr>
+
+    <div class="button">
+        <a href="#" class="arial italic bold a">Click</a>
+    </div>
+    <p>박스안의 글씨 중앙 맞추는법:
+        head 부분에 style 태그안에 class를 만들어서 text-align:center 를 입력하여 div에 적용함으로 
+        '가로' 중앙을 맞추고<br>
+        
+        마찬가지로 class태그 line-height 에 px 픽셀값을 주어 글자태그(a or p or h1등)에 적용
+        '수직' 중앙을 맞춘다. 
+    </p>
+
+    <br>
+    <hr>
+    <a href="#">일반적으로 a태그는 파란색글씨에 밑줄이 그어져있습니다.</a><br>
+    <a href="#" class="decoration">하지만 요즘시대에는 밑줄은 없애는것이 보통입니다 text-decoration속성을 이용해서요</a>
+
+</body>
+</html>

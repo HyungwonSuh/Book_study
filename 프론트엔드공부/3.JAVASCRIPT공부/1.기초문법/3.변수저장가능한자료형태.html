@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //문자형
+        var s = 'javascript <br>'
+        var num = '100'
+        var tag = '<h1>hahahahaha</h1>'
+        
+        document.write('문자형 <br>');
+        document.write(s);
+        document.write(num);
+        document.write(tag + '<br><br>');
+
+        //숫자형
+        var s = 100 + '<br>';
+        var t = Number('100');
+        
+        document.write('숫자형 <br>');
+        document.write(s)
+        document.write(t + '<br><br>')
+        
+
+        //논리형
+        var s = true;
+        var t = 10 > 100;
+        var k = Boolean('hello')
+        var m = Boolean(0)
+        var n = Boolean(null)
+        var o = Boolean(undefined)
+        var p = Boolean("")
+        var q = Boolean("홍길동")
+
+        document.write('논리형 <br>');
+        document.write('true: ' + s  + '<br>')
+        document.write('10 > 100: ' + t  + '<br>')
+        document.write('hello: ' + k  + '<br>')
+        document.write('0: ' + m  + '<br>')
+        document.write('null: ' + n  + '<br>')
+        document.write('undefined: ' + o  + '<br>')
+        document.write('"": ' + p  + '<br>')
+        document.write('홍길동: ' + q  + '<br>')
+    </script>
+</body>
+</html>

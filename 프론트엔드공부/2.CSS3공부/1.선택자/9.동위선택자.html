@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>동위선택자</title>
+    <style>
+        /* h1 태그 '바로' 뒤에 위치하는 h2 태그의 color 속성에 red 키워드를 적용합니다.*/
+        h1 + h2 {color:red}
+
+        /* h1 태그 '뒤에' 위치하는 h2 태그의 background 속성에 orange를 적용합니다.*/
+        h1 ~ h2{background-color: orange;}
+    </style>    
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>선택지 형태</th>
+            <th>설명</th>
+        </tr>
+        <tr>
+            <td>선택지A + 선택지B</td>
+            <td>선택지A 바로뒤에 위치하는 선택지B를 선택합니다.</td>
+        </tr>
+        <tr>
+            <td>선택지A ~ 선택지B</td>
+            <td>선택지A 뒤에 위치하는 선택지B를 선택합니다.</td>
+        </tr>
+    </table>
+    <br><hr>
+
+    <h1>Header - 1</h1>
+    <h2>Header - 2</h2>
+    <h2>Header - 2</h2>
+    <h2>Header - 2</h2>
+    <h2>Header - 2</h2>
+    <h2>Header - 2</h2>
+</body>
+</html>

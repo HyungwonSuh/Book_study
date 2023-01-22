@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>clear:both</title>
+    <style>
+        /* 본문에 해당하는 aside 와 section 뒤에 오는 footer를 제위치에 놓기위해서
+        본문과 footer 사이에 clear:both 속성이 적용된 div를 끼워넣는다.*/
+        body {
+            width:960px;
+            margin: auto;
+        }
+
+        #aside {
+            float: left;
+            width: 260px;
+        }
+
+        #section{
+            float: right;
+            width:700px;
+        }
+
+        .clear{
+            clear:both
+        }
+    </style>
+</head>
+<body>
+    <div id ="header"><h1>header</h1></div>
+    <div id="navigation"><h1>navigation</h1></div>
+
+    <div id="aside">
+        <h1>aside</h1>
+        <p>사이드 내용입니다용사이드 내용입니다용사이드 내용입니다용
+            사이드 내용입니다용사이드 내용입니다용사이드 내용입니다용
+            사이드 내용입니다용사이드 내용입니다용사이드 내용입니다용
+            사이드 내용입니다용사이드 내용입니다용사이드 내용입니다용
+            사이드 내용입니다용사이드 내용입니다용사이드 내용입니다용
+        </p>
+    </div>
+    <div id="section">
+        <h1>section</h1>
+        <p>본문내용입니다용본문내용입니다용본문내용입니다용본문내용입니다용
+            본문내용입니다용본문내용입니다용본문내용입니다용본문내용입니다용
+            본문내용입니다용본문내용입니다용본문내용입니다용본문내용입니다용
+            본문내용입니다용본문내용입니다용본문내용입니다용본문내용입니다용
+                       
+        </p>
+    </div>
+    <div class="clear"></div>
+
+    <div id="footer">
+        <h1>footer</h1>
+    </div>
+</body>
+</html>

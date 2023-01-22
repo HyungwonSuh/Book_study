@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>float속성</title>
+    <style>
+        /* 본문에 해당하는 aside와 section을 wrap 이라는 class를 만들어 감쌌을때
+        본문뒤에오는 footer 를 제위치에 놓기 위해서 wrap class 에 overflow:hidden을 준다.*/
+        body{
+            width: 960px;
+            margin:auto;
+        }
+        #wrap{
+            overflow: hidden;
+        }
+        #aside{
+            width:200px;
+            float:left;
+        }
+        #section{
+            width:760px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"><h1>header</h1></div>
+    <div id="navigation"><h1>navigation</h1></div>
+    <div id="wrap">
+        <div id="aside">
+            <h1>aside</h1>
+            <p>사이드내용이다냥사이드내용이다냥사이드내용이다냥사이드내용이다냥
+                사이드내용이다냥사이드내용이다냥사이드내용이다냥사이드내용이다냥
+                사이드내용이다냥사이드내용이다냥사이드내용이다냥사이드내용이다냥
+                사이드내용이다냥사이드내용이다냥사이드내용이다냥사이드내용이다냥
+            </p>
+        </div>
+        <div id="section">
+            <h1>section</h1>
+            <p>본문내용이다냥본문내용이다냥본문내용이다냥본문내용이다냥
+                본문내용이다냥본문내용이다냥본문내용이다냥본문내용이다냥
+                본문내용이다냥본문내용이다냥본문내용이다냥본문내용이다냥
+                본문내용이다냥본문내용이다냥본문내용이다냥본문내용이다냥
+                본문내용이다냥본문내용이다냥본문내용이다냥본문내용이다냥
+                본문내용이다냥본문내용이다냥본문내용이다냥본문내용이다냥
+                본문내용이다냥본문내용이다냥본문내용이다냥본문내용이다냥
+                본문내용이다냥본문내용이다냥본문내용이다냥본문내용이다냥
+                본문내용이다냥본문내용이다냥본문내용이다냥본문내용이다냥
+                본문내용이다냥본문내용이다냥본문내용이다냥본문내용이다냥
+        </div>
+    </div>        
+    <div id ="footer"><h1>footer</h1></div>
+</body>
+</html>

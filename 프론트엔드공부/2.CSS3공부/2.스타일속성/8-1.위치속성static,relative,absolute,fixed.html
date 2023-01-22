@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>위치속성</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            position: relative;
+        }
+
+        .red {
+            background-color: red;
+            left: 10px;
+            top: 100px;
+            position: relative;
+        }
+
+        .green {
+            background-color: green;
+            left: 50px;
+            top: 100px;
+            position: absolute;
+        }
+
+        .blue {
+            background-color: blue;
+            left: 90px;
+            top: 100px;
+            z-index: 10;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <table border="1">
+        <thead style="background-color: bisque">
+            <tr>
+                <th>키워드</th>
+                <th>설명</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>static</td>
+                <td>태그가 위에서 아래로 순서대로 배치됩니다.</td>
+            </tr>
+            <tr>
+                <td>relative</td>
+                <td>초기 위치 상태에서 상하좌우로 위치를 이동합니다.</td>
+            </tr>
+            <tr>
+                <td>absolute</td>
+                <td>절대 위치 좌표를 설정합니다.</td>
+            </tr>
+            <tr>
+                <td>fixed</td>
+                <td>화면을 기준으로 절대 위치 좌표를 설정합니다.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br />
+    <br />
+    <hr />
+    <br />
+    <br />
+    <div class="box"></div>
+    <div class="box red"></div>
+    <div class="box green"></div>
+    <div class="box blue"></div>
+</body>
+
+</html>

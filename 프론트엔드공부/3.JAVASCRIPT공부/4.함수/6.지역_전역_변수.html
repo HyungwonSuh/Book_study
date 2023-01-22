@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //---------------전역변수와 지역변수 -----------------------
+        var score = 10;
+        function myFnc_1(){
+            var score = 50;
+
+            alert(score);
+        }
+
+        myFnc_1();
+        alert(score)
+
+        //-----------------전역함수와 지역함수 ------------------------------
+
+        function myFnc_2(){
+            alert('전역함수')
+        }
+
+        function outerFnc(){
+            function myFnc_2(){
+                alert('지역함수')
+            }
+            myFnc_2()
+        }
+
+        myFnc_2();
+        outerFnc();
+
+        //---------------------------같은이름함수 충돌방지 하는방법---------------------------------
+        //개발자A 같은프로젝트에 같이 일하고있었는데, 동시에 같은 이름의 함수를 만들었다고 가정할때
+        (function(){
+            var num = 100;
+            function menu(){
+                num += 100;
+                alert(num);
+            }
+            menu()
+        }());
+
+
+        //개발자B 같은프로젝트에 같이 일하고있었는데, 동시에 같은 이름의 함수를 만들었다고 가정할때
+        (function(){
+            var num = 100;
+            function menu() {
+                alert(num)
+            }
+        }());
+        
+        menu()
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        //else 문 활용---------------------------------------------------------------------------------------
+        document.write('================================================else문 활용 ================================================<br>')
+        document.write('================================================else문 활용 ================================================<br>')
+        //예제1
+        document.write('<br>------------------------------예제1 ------------------------------<br>')
+        var num = prompt('What is your favorite number?')
+        if(num % 2 == 0){
+            document.write('Your favorite number is even number')
+        }else{
+            document.write('Your favorite number is odd number')
+        }
+
+        //예제2
+        document.write('<br>------------------------------예제2 ------------------------------<br>')
+        var result = confirm('정말로 탈퇴하시렵니까?ㅜ')
+        if(result){
+            document.write('탈퇴처리되셨습니다.')
+        }else{
+            document.write('탈퇴 취소되었습니다.')
+        }
+
+    </script>
+</body>
+</html>

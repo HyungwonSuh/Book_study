@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>클래스선택자</title>
+
+    <style>
+        /* class 속성값으로 select를 가지는 태그의 color 속성에 red키워드를 적용합니다.*/
+
+        .select{
+            color: red;
+        }
+
+        .watermelon{
+            color: yellow
+        }
+
+        .melon{
+            background-color: chocolate;
+        }
+
+        .watermelon.melon{
+            color:bisque; background-color: aqua;
+        }
+
+        li.banana{ 
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="select">냐옹이다냥</li>
+        <li>냐옹이다냥</li>
+        <li class="select">냐옹이다냥ㅎㅎㅎ</li>
+        <li>냐옹이다냥</li>
+    </ul>
+
+    <!--------------------------------------------------------------------------------->
+    <br>
+    <br><hr>
+
+    <h1 class ="watermelon melon">이것은 watermelon클래스와 melon클래스 두개를 동시적용한것이다냥</h1>
+    <h1 class ="watermelon">ㅎㅎ 이것은 watermelon클래스가 적용된 h1 태그다냥</h1>
+    <h1 class ="melon">ㅎㅎ 이것은 melon클래스가 적용된 h1 태그다냥</h1>
+
+    <!--------------------------------------------------------------------------------->
+    <br>
+    <br><hr>
+
+    <!--------------------------------------------------------------------------------->
+    <h1 class="banana"> 냐옹이다냥 ㅎㅎㅎ head style에 li.banana {color:green} 을했기때문에
+        banana클래스를 적용한 이글씨(h1)는 초록색으로 보이지않는다냥 </h1>
+    <ul>
+        <li class = "banana">냐옹이다냥 ㅎㅎ li 태그인 이것만 초록색으로 보인다냥</li>
+        <li>냐옹이다냥 ㅎㅎ</li>
+        <li>냐옹이다냥 ㅎㅎ</li>
+        <li>냐옹이다냥 ㅎㅎ</li>
+    </ul>
+
+</body>
+</html>

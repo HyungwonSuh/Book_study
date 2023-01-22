@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var t = 'Hello Thank you good luck to you';
+        document.write('t : ', t, '<br>')
+        document.write('t.charAt(16) : ',t.charAt(16), '<br>')
+        document.write('t.indexOf("you") : ',t.indexOf('you'),'<br>')
+        document.write('t.lastIndexOf("you") : ',t.lastIndexOf('you'),'<br>')
+        document.write('t.lastIndexOf("you", 25) : ',t.lastIndexOf('you', 25),'<br>')
+        document.write('t.search("you") : ',t.search('you'),'<br>')
+        document.write('t.match("luck") : ',t.match('luck'),'<br>')
+        document.write('t.match("lucky") : ',t.match('lucky'),'<br>')
+        document.write('t.substr(21, 4) : ',t.substr(21, 4),'<br>')
+        document.write('t.substring(6, 12) : ',t.substring(6, 12),'<br>')
+        document.write('t.replace("you", "me") : ',t.replace('you','me'),'<br>')
+        document.write('t.toLowerCase() : ',t.toLowerCase(),'<br>')
+        document.write('t.toUpperCase() : ',t.toUpperCase(),'<br>')
+        document.write('t.length (length(여기 괄호 쓰는거아님)) : ',t.length,'<br>')
+        
+        var s = t.split(" ")
+        document.write('var s = t.split(" ") ----> s : ', s , '<br>')
+        document.write('var s = t.split(" ") ----> s[0] : ', s[0] , '<br>')
+        document.write('var s = t.split(" ") ----> s[4] : ', s[4] , '<br>')
+
+        var str = 'ABCDE';
+        var t = str.charCodeAt(0)
+        document.write('var t = str.charCodeAt(0) ----> t : ', t, '<br>')
+        var t = str.charCodeAt(1)
+        document.write('var t = str.charCodeAt(1) ----> t : ', t, '<br>')
+        document.write('String.fromCharCode(65) : ',String.fromCharCode(65), "<br>")
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////
+        document.write('<br>//////////////////////////////////////예제1////////////////////////////////////<br>')
+        var userName = prompt('당신의 영문 이름은?', 'Jack')
+        var upperName = userName.toLocaleUpperCase();
+        document.write('upperName : ', upperName, '<br>')
+
+        var userNum = prompt('당신의 연락처는?', '010-1234-5678');
+        var result = userNum.substring(0, userNum.length - 4) + "****";
+        document.write(result, '<br>')
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////
+        document.write('<br>//////////////////////////////////////예제2////////////////////////////////////<br>')
+        var userEmail = prompt('당신의 이메일 주소는?','0526shw@gmail.com')
+        var arrUrl = ['.co.kr', '.com', '.net', '.or.kr', '.go.kr'];
+
+        var check1 = false;
+        var check2 = false;
+
+        if(userEmail.indexOf('@') > 0){
+            check1 = true;
+        }
+
+        for(i in arrUrl){
+            document.write(i, '<br>')
+            if(userEmail.indexOf(arrUrl[i]) > 0){
+                document.write('arrUrl[i] : ', userEmail.indexOf(arrUrl[i]), '<br>')
+                check2 = true;
+            }
+        }
+
+        if(check1 && check2){
+            document.write(userEmail)
+        }else{
+            document.write('메일 형식이 잘못 되었습니다.')
+        }
+
+    </script>
+</body>
+</html>

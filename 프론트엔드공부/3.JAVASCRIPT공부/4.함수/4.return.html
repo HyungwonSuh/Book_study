@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //<!---------------------------예제1--------------------------->
+        document.write('예제1--------------------------------------------- <br>')
+        function testAvg(arrData){
+            var sum = 0;
+            for(var i = 0; i < arrData.length; i++){
+                sum += Number(prompt(arrData[i] + '점수는?',"50"))
+            }
+            var avg = sum / arrData.length;
+            return avg;
+        }
+
+        var arrSubject = ['국어', '수학'];
+        var result = testAvg(arrSubject);
+
+        document.write('평균점수는' + result + '점입니다. <br><br>')
+    
+        
+        //<!---------------------------예제2--------------------------->
+        document.write('예제2--------------------------------------------- <br>')
+        var num = 0;
+        function gallery(direct){
+            if(direct){
+                if(num == 800) return;
+                num+=100;
+            }else{
+                if(num == 100) return;
+                num-=100;
+            }
+
+            var imgTag = document.getElementById('photo');
+            imgTag.setAttribute('src', 'https://picsum.photos/' + num);
+        }
+    </script>
+
+    <div id="galleryZone">
+        <p>
+            <img src = 'https://picsum.photos/100' id="photo" alt="">
+        </p>
+        <p>
+            <button onclick="gallery(0)">이전</button>
+            <button onclick="gallery(1)">다음</button>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('#user_id_1, #user_pw_1').on(
+                {
+                    'focus': function(){
+                        $(this).css({'background-color':'pink'})
+                    },
+                    'blur': function(){
+                        $(this).css({'background-color' : '#fff'})
+                    }
+                }   
+            
+            )
+            $('#fm_2').on(
+                {
+                    'focusin':function(){
+                        $(this).css({'background-color':'pink'})
+                    }, 
+                    'focusout':function(){
+                        $(this).css({'background-color':'#fff'})
+                    }
+                }
+            )
+
+        });
+    </script>
+    
+</head>
+<body>
+ <h1>focus/blur</h1>
+ <form action="#">
+    <p>
+        <label for="user_id_1">ID</label>
+        <input type="text" name="user_id_1" id="user_id_1">
+    </p>
+    <p>
+        <label for="user_pw_1">PW</label>
+        <input type="password" name="user_pw_1" id="user_pw_1">
+    </p>
+ </form>
+
+ <h1>focusin/focusout</h1>
+ <form action="#" id="fm_2">
+    <p>
+        <label for="user_id_2">ID</label>
+        <input type="text" name="user_id_2" id="user_id_2">
+    </p>
+    <p>
+        <label for="user_pw_2">PW</label>
+        <input type="password" name="user_pw_2" id="user_pw_2">
+    </p>
+ </form>
+</body>
+</html>

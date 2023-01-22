@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>형태구조선택자</title>
+    <style>
+        /* nth-child() 와 nth-of-type 의 차이점은
+        nth-child() 는 순서만 맞게 종류상관없이 모든 태그에 적용시키지만,
+        nth-of-type() 는 자식중 다른 태그가 있으면 각각 태그별로 적용 시킨다.(태그종류는 다르지만, 같은 class를 적용시켰을경우)*/
+        h1:nth-of-type(2) { color:red;}
+        h2:nth-of-type(2) { color:red;}
+        h3:nth-of-type(2) { color:red;}
+
+        body > *:first-of-type {color:green}
+    </style>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>선택자 형태</th>
+            <th>설명</th>
+        </tr>
+        <tr>
+            <td>:first-of-type</td>
+            <td>형제 관계중에서 첫 번째로 등장하는 특정 태그를 선택합니다.</td>
+        </tr>
+        <tr>
+            <td>:last-of-type</td>
+            <td>형제 관계중에서 마지막으로 등장하는 특정 태그를 선택합니다.</td>
+        </tr>
+        <tr>
+            <td>:nth-of-type</td>
+            <td>형제 관계중에서 앞에서 수열 번째로 등장하는 특정 태그를 선택합니다.</td>
+        </tr>
+        <tr>
+            <td>:nth-last-of-type</td>
+            <td>형제 관계중에서 뒤에서 수열 번째로 등장하는 특정 태그를 선택합니다.</td>
+        </tr>
+    </table>
+    
+    <br><br><hr>
+    
+    <h1>Header - 1</h1>
+    <h2>Header - 2</h2>
+    <h3>Header - 3</h3>
+    <h3>Header - 3</h3>
+    <h2>Header - 2</h2>
+    <h1>Header - 1</h1>
+</body>
+</html>

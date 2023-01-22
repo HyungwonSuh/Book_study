@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>셀합치기</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container1{
+            display:grid;
+            grid-template: 200px 200px 200px / 300px 300px 300px;
+        }
+        .container1 div{
+            box-sizing:border-box;
+            border: 5px solid black;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 5px;
+        }
+        .container1 .cell-a{
+            grid-row: 1 / 4;
+            grid-column: 1 / 3;
+        }
+
+        .container2{
+            width: 960px;
+            margin: auto;
+            padding-top: 10px;
+
+            display: grid;
+            grid-template: 70px 1fr 70px / 200px 1fr;
+        }
+        .container2 div{
+            margin: 5px;
+            box-sizing: content-box;
+            border: 5px solid black;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .cell-header{
+            grid-column: 1 / 3;
+        }
+        .cell-footer{
+            grid-column: 1 / 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="cell-a">cell a</div>
+        <div class="cell-b">cell b</div>
+        <div class="cell-c">cell c</div>
+        <div class="cell-d">cell d</div>
+        <div class="cell-d">cell e</div>
+        <div class="cell-d">cell f</div>
+        <div class="cell-d">cell g</div>
+    </div>
+
+    <div class="container2">
+        <div class="cell-header">
+            <h1>cell header</h1>
+        </div>
+        <div class="cell-aside">
+            <h2>cell aside</h2>
+            <p> cell asidecell asidecell asidecell asidecell asidecell asidecell aside</p>
+            <p> cell asidecell asidecell asidecell asidecell asidecell asidecell aside</p>
+        </div>
+        <div class="cell-content">
+            <h1>cell content</h1>
+            <p>cell contentcell contentcell contentcell contentcell contentcell contentcell contentcell contentcell content</p>
+            <p>cell contentcell contentcell contentcell contentcell contentcell contentcell contentcell contentcell content</p>
+            <p>cell contentcell contentcell contentcell contentcell contentcell contentcell contentcell contentcell content</p>
+        </div>
+        <div class="cell-footer">
+            <h1>cell footer</h1>
+        </div>
+    </div>
+</body>
+</html>

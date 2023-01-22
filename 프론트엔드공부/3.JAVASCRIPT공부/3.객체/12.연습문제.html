@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write('<h1>실습예제1</h1>')
+        /*
+        화면에
+        010-2345-****
+        image/bnt_over.jpg
+        를 띄우시오.
+        */
+        var phoneNum = '010-2345-1234';
+        var result_1 = phoneNum.substring(0, 9)
+        document.write(result_1, "****<br>")
+
+        var imgSrc = 'image/bnt_out.jpg';
+        var result_2 = imgSrc.replace('out', 'over');
+        document.write(result_2,'<br>')
+
+        document.write('<h1>실습예제2</h1>')
+        /*
+        점심메뉴 5가지중 랜덤으로 고르기
+        */
+
+        var menu = ['짜장면', '돈가스', '된장국', '김치찌개', '회덮밥']
+        var menuNum = Math.floor(Math.random() * 5)
+        var result = menu[menuNum]
+        document.write(result)
+    </script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////
+        document.write('/////////////////////////////////////산술연산자///////////////////////////////////////////////////<br><br>')  
+        var num1 = 15;
+        var num2 = 2;
+        var result;
+        
+        document.write('num1 = ', num1, ', ', 'num2 = ', num2, '<br><br>')
+        
+        result = num1 + num2
+        document.write('num1 + num2 = ', result, '<br>');
+                
+        result = num1 - num2
+        document.write('num1 - num2 = ', result, '<br>')
+        
+        result = num1 * num2
+        document.write('num1 * num2 = ', result, '<br>')
+        
+        result = num1 / num2
+        document.write('num1 / num2 = ', result, '<br>')
+        
+        result = num1 % num2
+        document.write('num1 % num2 = ', result, '<br><br>')
+
+        var t1 = '학교종이'
+        var t2 = '땡땡떙'
+        var t3 = 8282
+        var t4 = '어서모이자'
+        var result
+
+        result = t1 + t2 + t3 + t4;
+        document.write(result, '<br><br>')
+        /// //////////////////////////////////////////////////////////////////////////////////////////////////////
+        document.write('////////////////////////////////대입연산자////////////////////////////////////////////////////////<br><br>')    
+        var num1 = 10;
+        var num2 = 3;
+        document.write('num1 = ', num1, ", ", 'num2 = ', num2, '<br><br>')
+
+        num1 += num2
+        document.write('num1 += num2', '----->', 'num1 = ', num1, '<Br>')
+        
+        var num1 = 10;
+        var num2 = 3;
+        num1 -= num2
+        document.write('num1 -= num2', '----->', 'num1 = ', num1, '<Br>')
+            
+        var num1 = 10;
+        var num2 = 3;
+        num1 *= num2
+        document.write('num1 *= num2', '----->', 'num1 = ', num1, '<Br>')
+        
+        var num1 = 10;
+        var num2 = 3;
+        num1 /= num2
+        document.write('num1 /= num2', '----->', 'num1 = ', num1, '<Br>')
+
+        var num1 = 10;
+        var num2 = 3;
+        num1 %= num2
+        document.write('num1 %= num2', '----->', 'num1 = ', num1, '<Br><br><br>')
+
+        var str = "<table border =' 1'>";
+        str += "<tr>"
+        str += "<td>1</td><td>2</td><td>3</td>"
+        str += "</tr>"
+        str += "</table>"
+
+        document.write(str)
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////
+        document.write('//////////////////////////////////////증감연산자//////////////////////////////////////////////<br><br>')    
+
+        var num1 = 10;
+        var num2 = 20;
+        var result;
+
+        document.write('num1 = ', num1, ' , ', 'num2 = ', num2, '<br>')
+
+        num1--;
+        document.write('num1-- , 결과는? ', num1, '<br>')
+        
+        num1++;
+        document.write('num1++ , 결과는? ', num1, '<br>')
+
+        var num1 = 10;
+        var num2 = 20;
+        var result;
+        result = num2++;
+        document.write('result = num2++ , 결과는? ', 'result = ', result, ' , ', 'num2 = ', num2, '<br>')
+
+        var num1 = 10;
+        var num2 = 20;
+        var result;
+        result = ++num2;
+        document.write('result = ++num2 , 결과는? ', 'result = ', result, ' , ', 'num2 = ', num2, '<br><br>')
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////
+        document.write('////////////////////////////////////////비교연산자////////////////////////////////////////////<br><br>')    
+        
+        var A = 10
+        var B = '10'
+        document.write('A = 10 , B = "10" <br><br>')
+
+        document.write('A == 10, ', A == 10, '<br>')
+        document.write('A == "10", ', A == "10", '<br>')
+        document.write('A === 10, ', A === 10, '<br>')
+        document.write('A === "10", ', A === "10", '<br><br>')
+        document.write('A != 10, ', A != 10, '<br>')
+        document.write('A != "10", ', A != "10", '<br>')
+        document.write('A !== 10, ', A !== 10, '<br>')
+        document.write('A !== "10", ', A !== "10", '<br><br>')
+
+        document.write('B == 10, ', B == 10, '<br>')
+        document.write('B == "10", ', B == "10", '<br>')
+        document.write('B === 10, ', B === 10, '<br>')
+        document.write('B === "10", ', B === "10", '<br><br>')
+        document.write('B != 10, ', B != 10, '<br>')
+        document.write('B != "10", ', B != "10", '<br>')
+        document.write('B !== 10, ', B !== 10, '<br>')
+        document.write('B !== "10", ', B !== "10", '<br><br>')
+
+        document.write('A == B, ', A == B, '<br>')
+        document.write('A != B, ', A != B, '<br>')
+        document.write('A === B, ', A === B, '<br>')
+        document.write('A !== B, ', A !== B, '<br>')
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////
+        document.write('<br>///////////////////////////////////논리연산자/////////////////////////////////////////////////<br><br>') 
+        var a = 10;
+        var b = 20;
+        var m = 30;
+        var n = 40;
+        var result;
+
+        document.write('a = ', a, ' , b = ', b, ' , m = ', m, ' , n = ', n, '<Br><br>')
+
+        result = a > b || b >= m || m > n;
+        document.write('result = a > b || b >= m || m > n ------>', result, '<br>')
+        
+        result = a > b || b >= m || m <= n;
+        document.write('result = a > b || b >= m || m <= n ------>', result, '<br>')
+        
+        result = a <= b && b >= m && m <= n;
+        document.write('result = a <= b && b >= m && m <= n ------>', result, '<br>')
+        
+        result = a <= b && b <= m && m <= n;
+        document.write('result = a <= b && b <= m && m <= n ------>', result, '<br><br>')
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////
+        document.write('<br>///////////////////////////////////삼항조건연산자/////////////////////////////////////////////////<br><br>') 
+        
+        var a = 10;
+        var b = 3;
+
+        var result = a > b ? "This is True result" : "This is False result";
+        document.write('a = ', a, ' , b = ', b, "<br>");
+        document.write('var result = a > b ? "This is True result" : "This is False result"; <br>')
+        document.write('result = ', result, '<br>')
+
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////
+        document.write('<br>///////////////////////////////////적정체중구하기 실전/////////////////////////////////////////////////<br><br>') 
+
+        //적정체중 = (본인신장 - 100) * 0.9
+        // 철수 180cm 74kg
+
+        var name = prompt('What\'s your name?',"");
+        var height = prompt('how tall are you?',"0");
+        var weight = prompt('how much do you weigh?',"0");
+        var properWeight = (height - 100) * 0.9;
+
+        var result = (weight > properWeight) ? ("Your proper weight is, " + properWeight + " so, you are " + (weight - properWeight) + "overweighted.") : ("Your proper weight is, " + properWeight + " so, you are " +  (properWeight - weight) + "underweighted.");  
+        document.write('name : ', name, '<br>', 'height : ', height, '<br>', 'weight : ', weight, '<br>', result,'<br>');
+    </script>
+</body>
+</html>

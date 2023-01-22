@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function(){
+            $.ajax({
+                url:'JSON_test.json',
+                dataType: 'json',
+                success: function(data){
+                    if(data.length > 0){
+                        var tb = $('<table/>');
+                        for(var i in data){
+                            var $id = data[i].id;
+                            var $first_name = data[i].first_name;
+                            var $last_name = data[i].last_name;
+                            var $email = data[i].email;
+                            var $gender = data[i].gender;
+
+                            var row = $('<tr/>').append(
+                                $('<td/>').text($id),
+                                $('<td/>').text($first_name),
+                                $('<td/>').text($last_name),
+                                $('<td/>').text($email),
+                                $('<td/>').text($gender)
+                            );
+
+                            tb.append(row);
+                        }
+                        $('.wrap').append(tb)
+                    }
+                }
+            })
+
+        });
+    </script>
+
+</head>
+<body>
+    <div class="wrap"></div>
+</body>
+</html>

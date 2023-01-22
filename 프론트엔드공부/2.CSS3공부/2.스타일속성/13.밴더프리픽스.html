@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>밴더프리픽스</title>
+    <style>
+        input[type=checkbox]:checked + div {
+            height: 0px;
+        }
+
+        div {
+            border: 1px;
+            background-color: red;
+            overflow:hidden;
+            width:650px;
+            height:300px;
+
+            -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+    <div>1</div>
+    
+</body>
+</html>

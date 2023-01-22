@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>자손선택자</title>
+    <style>
+        /* id 속성값으로 header를 가지는 태그의 자손 위치에 있는 h1 태그의
+        color 속성에 red 키워드를 적용합니다.*/
+        #header > h1 {color: red;}
+
+        /* id 속성값으로 section을 가지는 태그의 자손 위치에 있는 h1 태그의
+        color 속성에 orange 키워드를 적용합니다.*/
+        #section > h1 {color: orange;}
+
+        /* table 태그 아래의 tbody 아래 tr태그 아래 th 태그의 color 속성에 red키워드를 적용합니다.*/
+        /* tbody 는 크롬에서 자동으로 추가해준다냥*/
+        table > tbody > tr > th {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div id ="header">
+        <h1 class = "title">이것은 제목이다냥</h1>
+        <div id="nav">
+            <h1>div>div>h1 Navigation</h1>
+        </div>
+    </div>
+    <div id ="section">
+        <h1 class="title">이것은 제목이다냥</h1>
+        <p>지금당장 츄르를 대령하지않으면 집사 가만두지 않겠다냥
+            지금당장 츄르를 대령하지않으면 집사 가만두지 않겠다냥
+            지금당장 츄르를 대령하지않으면 집사 가만두지 않겠다냥
+            지금당장 츄르를 대령하지않으면 집사 가만두지 않겠다냥
+            지금당장 츄르를 대령하지않으면 집사 가만두지 않겠다냥
+            지금당장 츄르를 대령하지않으면 집사 가만두지 않겠다냥
+        </p>
+    </div>
+
+    <table border ="1">
+        <!-- <tbody> 는 쓰지 않았지만, 크롬에서 자동으로 추가해준다냥-->
+        <tr>
+            <th>Name</th>
+            <th>Region</th>
+        </tr>
+        <tr>
+            <td>양예은</td>
+            <td>서울특별시 강동구 명일동</td>
+        </tr>
+    </table>
+</body>
+</html>

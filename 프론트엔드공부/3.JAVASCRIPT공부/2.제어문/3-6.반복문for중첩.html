@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.write('<table>')
+        for(var i = 1; i <= 3; i++){
+            document.write('<tr>')            
+            for(var k = 1; k <= 2; k++){
+                document.write('<td>')
+                document.write(i + '행' + k + '열')
+                document.write('</td>')
+            }
+            document.write('</tr>')
+        }
+        document.write('</table>')
+    </script>
+</body>
+</html>

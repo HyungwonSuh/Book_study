@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write('함수선언 2가지방법 <br>')
+
+
+        ////////////////////////////////////////////////////////////////////////
+
+        var count = 0;
+
+        // theFnc();  <-- 변수에 함수를 담아 함수를 선언할 경우 -> 반드시 함수를 선언한다음 함수를 호출해야 작동한다.
+
+        var theFnc = function(){
+            count++;
+            document.write('bye' + count + '<br>')
+        }
+
+        theFnc();
+
+        ////////////////////////////////////////////////////////////////////////
+        
+        var count = 0;
+
+        myFnc(); //  <-- 변수에 함수를 담지 않고 바로 선언할 경우 - > 반드시 함수를 선언한다음 함수를 호출 안해도 정상 작동한다.
+
+        function myFnc(){
+            count ++;
+            document.write('hello' + count + '<br>')
+        }
+
+        myFnc();
+
+    </script>
+</body>
+</html>

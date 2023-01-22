@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 현재 보고있는 browser ( Edge , Chrome, Safari ...)에 관한 method 이다-->
+    <!--//console 창에 전부 복사해서 붙여넣고 콘솔창에서 결과확인하기-->
+    <script>
+        location.href = 'http://www.naver.com'
+
+        //주소창에 #뒤의 값을 반환
+        var userHash = location.hash
+        console.log('location.hash : ', userHash)
+
+        var userHost = location.host
+        console.log('location.host : ', userHost)
+
+        var userHostName = location.hostname
+        console.log('location.hostname : ', userHostName)
+
+        var userProtocol = location.protocol
+        console.log('location.protocal : ', userProtocol)
+
+        //url 의 쿼리(요청값)을 반환
+        var userSearch = location.search
+        console.log('location.search : ', userSearch)
+        
+        //var userReload = location.reload()
+        //console.log(userReload)
+
+        
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('.txt1').animate({marginLeft : '100px'},1000).animate({marginLeft : '300px'},1000).animate({marginLeft : '400px'},1000)
+            $('.txt2').animate({marginLeft : '100px'},1000).animate({marginLeft : '300px'},1000).animate({marginLeft : '400px'},1000)
+            $('.txt2').clearQueue();
+        });
+    </script>
+    <style>
+       .txt1, .txt2{
+        width: 50px;
+        text-align: center;
+        background-color: aqua;
+    }
+    .txt2{background-color: orange;}
+    </style>
+</head>
+<body>
+  <p class="txt1">내용1</p>
+  <p class="txt2">queue 는 첫번째 애니메이션을 제외하고 그뒤 큐에서 대기중인 모든 애니메이션을 제거합니다.</p>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<script>
+    $(function(){
+        $.fn.extend({
+            faq: function(){
+                var ts = $(this);
+                $.each(ts, function(i,o){
+                    $('button', o).on('click', tabmenu);
+                    function tabmenu(){
+                        if($(this).parent().next().is(':hidden')){
+                            $('li > div:visible', o).hide();
+                            $(this).parent().next().show();
+                        }else{
+                            $('li>div:visible',o).hide()
+                        }
+                    }
+                })
+            }
+        })
+        $('.faq').faq()
+    })
+</script>
+<body>
+   <h1>질문 제목1</h1>
+   <div class="faq">
+    <ul>
+        <li>
+            <p><button>Q1.자주 묻는 질문 내용?</button></p>
+            <div>
+                <div class="cont">답변 내용1</div>
+            </div>
+        </li>
+        <li>
+            <p><button>Q2.자주 묻는 질문 내용?</button></p>
+            <div>
+                <div class="cont">답변 내용1</div>
+            </div>
+        </li>
+    </ul>
+   </div>
+   <h1>질문 제목2</h1>
+   <div class="faq">
+    <ul>
+        <li>
+            <p><button>Q1.자주 묻는 질문 내용?</button></p>
+            <div>
+                <div class="cont">답변 내용1</div>
+            </div>
+        </li>
+        <li>
+            <p><button>Q2.자주 묻는 질문 내용?</button></p>
+            <div>
+                <div class="cont">답변 내용1</div>
+            </div>
+        </li>
+    </ul>
+   </div>
+</body>
+</html>

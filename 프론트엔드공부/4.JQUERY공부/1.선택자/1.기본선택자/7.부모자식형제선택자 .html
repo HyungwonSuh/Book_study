@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script>
+        $(function(){
+            $('#wrap h1').css('border','2px dashed blue')
+            $('#inner-wrap > h2').css('bor8der', '1px solid red')
+            $('p.star').parent().css('border','1px solid black')
+            $('#inner-wrap > div > .night').children('#sun').css('color','red')
+            $('h1').next().css('color','green');
+            $('#water').prev().css('background-color', 'yellow')
+            $('#water').next().css('background-color', 'yellow')
+            $('.wind').nextAll().css({'color':'white', 'background-color':'black'})
+            $('.desk').prevAll().css('background-color','green')
+            $('li').siblings().css('background-color','blue')
+            $('.middle').prevUntil('.top').css('color','white')
+            $('.middle').nextUntil('.bottom').css('color','white')
+            $('.par4').parents('.par2').css('border', '5px solid orange')
+            $('.par5').closest('span').css('border', '5px solid green')
+        })
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <div>코팅지</div>
+        <div>겉표지</div>
+        <div class="desk">목차</div>
+        <div id="inner-wrap">
+            <h1>제목1</h1>
+            <h2>제목2</h2>
+            <div id = water>
+                제목3
+                <p>내용1</p>
+                <p class="star">내용2</p>
+                <p>내용3</p>
+                <h1 class="night">
+                    내용4
+                    <div id = sun> 내용5</div>
+                    <div> 내용6</div>
+                </h1>
+            </div>
+            <div>
+                제목4
+            </div>
+            <div class='wind'>
+                제목5
+            </div>
+            <div>
+                제목6
+            </div>
+            <div>
+                <div>내용7</div>
+                <div>내용8</div>
+                <div>내용9</div>
+            </div>
+        </div>
+        <ul>
+            <li>리스트1</li>
+            <li class="top">리스트2</li>
+            <li>리스트3</li>
+            <li>리스트4</li>
+            <li class="middle">리스트5</li>
+            <li>리스트6</li>
+            <li>리스트7</li>
+            <li class="bottom">리스트8</li>
+            <li>리스트9</li>
+        </ul>
+    </div>
+    <div class="par1">
+        하잇1
+        <div class="par2">
+            하잇2
+            <span class="par3">
+                하잇3
+                <div class="par4">
+                    하잇4
+                    <div class="par5">
+                        하잇5
+                    </div>
+                </div>
+            </span>
+        </div>
+    </div>
+</body>
+</html>

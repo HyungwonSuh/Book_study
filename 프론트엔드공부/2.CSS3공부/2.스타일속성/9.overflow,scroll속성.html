@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>overflow</title>
+    <style>
+        .box{
+        width:100px; height:100px;
+        position: absolute;
+        }
+        .red{background-color: red;
+        left: 10px; top:10px;
+        z-index: 30;}
+        .green{background-color: green;
+        left: 50px; top:50px;
+        z-index: 20;}
+        .blue{background-color: blue;
+        left: 90px; top:90px;
+        z-index: 10;}
+
+        body>div{
+            width: 400px; height: 100px;
+            border: 3px solid black;
+            position: relative;
+
+            /* overflow 속성추가!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+            overflow: hidden; /*or scroll*/
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>이것은 제목이다냥</h1>
+    <div>
+        <div class="box red"></div>
+        <div class="box green"></div>
+        <div class="box blue"></div>
+    </div>
+    <h1>이것은 제목이다냥</h1>
+</body>
+</html>

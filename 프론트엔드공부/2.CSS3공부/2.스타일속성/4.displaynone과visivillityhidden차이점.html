@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>가시 속성</title>
+    <style>
+        input[type=checkbox]:checked+#box{
+            display:none;
+
+            background-color: red;
+            width:300px;
+            height:50px;
+            margin:10px;
+        }
+        
+        input[type=checkbox]:checked+#box2{
+            visibility:hidden;
+
+            background-color: red;
+            width:300px;
+            height:50px;
+            margin:10px;
+        }
+        
+        h1 {
+            opacity:0.1;
+        }
+    </style>
+</head>
+<body>
+    <h1>이것은 투명도조절이다냥 opacity 0.0~1.0</h1>
+    <br>
+    <br>
+    <br>
+    
+    <span>span제목이다냥</span>
+    <input type="checkbox">
+    <div id ="box">
+        <span>이것은 span으로 만든 글이다냥 스펨이아니라냥이것은 
+            span으로 만든 글이다냥 스펨이아니라냥
+            이것은 span으로 만든 글이다냥 스펨이아니라냥
+            이것은 span으로 만든 글이다냥 스펨이아니라냥
+            이것은 span으로 만든 글이다냥 스펨이아니라냥
+            이것은 span으로 만든 글이다냥 스펨이아니라냥
+            이것은 span으로 만든 글이다냥 스펨이아니라냥
+            이것은 span으로 만든 글이다냥 스펨이아니라냥
+        </span>
+    </div>
+    <span>span제목이다냥</span>
+
+    <br>
+    <br>
+    <hr>
+    <br>
+
+    <span>span제목이다냥</span>
+    <input type="checkbox">
+    <div id ="box2">
+        <span>이것은 span으로 만든 글이다냥 스펨이아니라냥이것은 
+            span으로 만든 글이다냥 스펨이아니라냥
+            이것은 span으로 만든 글이다냥 스펨이아니라냥
+            이것은 span으로 만든 글이다냥 스펨이아니라냥
+            이것은 span으로 만든 글이다냥 스펨이아니라냥
+            이것은 span으로 만든 글이다냥 스펨이아니라냥
+            이것은 span으로 만든 글이다냥 스펨이아니라냥
+            이것은 span으로 만든 글이다냥 스펨이아니라냥
+        </span>
+    </div>
+    <span>span제목이다냥</span>
+</body>
+</html>

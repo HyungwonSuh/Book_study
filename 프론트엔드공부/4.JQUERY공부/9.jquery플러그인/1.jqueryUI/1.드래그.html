@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <script src="./jquery-ui.js"></script>
+    <link rel="stylesheet" href="./jquery-ui.css">
+    <style>
+        .layer_popup{
+            position: absolute;
+            left: 50px;
+            top: 50px;
+            cursor:move;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $('.layer_popup').draggable({
+                axis: 'x'
+            })
+        });
+    </script>
+
+</head>
+<body>
+   <div class="layer_popup">
+    <img src="../../2.CSS3공부/8.자바스크립트/Images/Character_1.png" alt="">
+   </div>
+</body>
+</html>
